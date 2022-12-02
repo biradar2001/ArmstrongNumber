@@ -1,0 +1,34 @@
+import java.util.*;
+public class Armstrong {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+      Scanner s = new Scanner(System.in);
+       System.out.println("Enter the Number ");
+       int Number = s.nextInt();
+        int sum=0,arm,no=0;
+        
+        		
+        
+        while(no>0)
+        {
+        arm=no % 10;
+        sum=sum+arm*arm*arm;
+        no=no/10;
+        
+        }
+        
+        if(sum==Number)
+        {
+        	System.out.println("Armstrong no");
+        	
+        }
+        
+        else 
+        {
+        	System.out.println("Not Armstrong ");
+        }
+	}
+
+}
